@@ -42,7 +42,7 @@
 </template>
 
 <script>
-import { LedgerEnv } from '@kava-labs/switch-api'
+import { LedgerEnv } from '../../../switch-api'
 
 export default {
   computed: {

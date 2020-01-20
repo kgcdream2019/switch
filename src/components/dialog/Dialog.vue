@@ -30,7 +30,7 @@ import EnterPassword from '@/components/dialog/pages/EnterPassword.vue'
 import SelectMode from '@/components/dialog/pages/SelectMode.vue'
 import AutoUpdate from '@/components/dialog/pages/AutoUpdate.vue'
 import CapacityAlert from '@/components/dialog/pages/CapacityAlert.vue'
-import { SettlementEngineType } from '@kava-labs/switch-api'
+import { SettlementEngineType } from '../../../../switch-api'
 import Vue from 'vue'
 
 export default {

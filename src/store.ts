@@ -5,8 +5,8 @@ import {
   LedgerEnv,
   ReadyUplinks,
   SettlementEngineType
-} from '@kava-labs/switch-api'
-import { UplinkConfigs } from '@kava-labs/switch-api'
+} from '../../switch-api'
+import { UplinkConfigs } from '../../switch-api'
 import BigNumber from 'bignumber.js'
 import { createHmac } from 'crypto'
 import debug from 'debug'

@@ -11,7 +11,7 @@
 <script>
 import DialogContent from '@/components/dialog/DialogContent.vue'
 import LoadingSpinner from '@/components/dialog/pages/LoadingSpinner.vue'
-import { LedgerEnv } from '@kava-labs/switch-api'
+import { LedgerEnv } from '../../../../../switch-api'
 
 export default {
   components: {
