@@ -397,5 +397,32 @@ export default Vue.extend({
       }
     }
   }
+
+  &--xmrd {
+    #{ $self } {
+      &__front {
+        background-color: $dai-background;
+        background-image: url('~@/assets/xmrd-logo.svg');
+        background-position: left -80px top -20px;
+        background-size: auto 300px;
+
+        &__balance {
+          // Needs additional specificity to override previous style
+          &__amount,
+          &__asset-code {
+            color: white;
+          }
+        }
+      }
+
+      &__back {
+        background-color: $dai-background;
+
+        &__stripe {
+          background: $dark-card-stripe;
+        }
+      }
+    }
+  }
 }
 </style>

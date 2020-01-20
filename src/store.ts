@@ -621,7 +621,22 @@ export default new Vuex.Store<State>({
         }
       })
     },
+    //newly added code for xmrd
+    selectXmrd({ state, commit }) {
+      if (state.route.type !== 'select-asset') {
+        return
+      }
 
+      commit('NAVIGATE_TO', {
+        type: 'config-credential',
+        config: {
+          settlerType: SettlementEngineType.XmrdPaychan,
+          assetType: 'XMRD',
+          privateKey: ''
+        }
+      })
+    },
+    // end
     selectXrp({ state, commit }) {
       if (state.route.type !== 'select-asset') {
         return

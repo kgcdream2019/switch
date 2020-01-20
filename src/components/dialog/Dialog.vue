@@ -83,7 +83,10 @@ export default {
               ? {
                   [SettlementEngineType.Lnd]: ConfigBtc,
                   [SettlementEngineType.Machinomy]: ConfigEth,
-                  [SettlementEngineType.XrpPaychan]: ConfigXrp
+                  [SettlementEngineType.XrpPaychan]: ConfigXrp,
+                  //newly added code for xmrd
+                  [SettlementEngineType.XmrdPaychan]: ConfigXmrd
+                  //end
                 }[route.config.settlerType]
               : null,
             'creating-uplink': LoadingSpinner,

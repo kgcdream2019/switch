@@ -29,6 +29,12 @@
         />
         <label class="select-asset__button__label">DAI</label>
       </div>
+      <div class="select-asset__button" @click="$store.dispatch('selectXmrd')">
+        <div
+          class="select-asset__button__icon select-asset__button__icon--xmrd"
+        />
+        <label class="select-asset__button__label">XMRD</label>
+      </div>
     </section>
     <template v-slot:footer>
       <m-button @click="$store.dispatch('dismissDialog')">Cancel</m-button>
@@ -102,6 +108,11 @@ export default {
       &--dai {
         background-image: url('~@/assets/dai-logo.svg');
         background-size: 78px;
+      }
+
+      &--xmrd {
+        background-image: url('~@/assets/xmrd-logo.svg');
+        background-size: 58px;
       }
 
       @at-root #{$button}:hover:not(#{$button}--disabled) & {

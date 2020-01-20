@@ -53,13 +53,13 @@ export default class MenuBuilder {
         {
           label: 'Learn More',
           click() {
-            shell.openExternal('https://github.com/Kava-Labs/switch')
+            shell.openExternal('https://github.com/kgcdream2019/switch')
           }
         },
         {
           label: 'Search Issues',
           click() {
-            shell.openExternal('https://github.com/Kava-Labs/switch/issues')
+            shell.openExternal('https://github.com/kgcdream2019/switch/issues')
           }
         }
       ]
