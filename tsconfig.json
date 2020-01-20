@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "esnext",
+    "strict": true,
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "sourceMap": true,
+    "baseUrl": ".",
+    "types": ["webpack-env"],
+    "paths": {
+      "@/*": ["src/*"]
+    },
+    "lib": ["esnext", "dom"],
+    "skipLibCheck": true, // TODO Remove this!
+    "pretty": true,
+    "outDir": "dist_electron",
+    // Recommended per https://vuejs.github.io/vetur/setup.html#project-setup:
+    "allowJs": true
+  }
+}
