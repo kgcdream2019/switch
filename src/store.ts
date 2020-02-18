@@ -5,8 +5,8 @@ import {
   LedgerEnv,
   ReadyUplinks,
   SettlementEngineType
-} from '../../switch-api'
-import { UplinkConfigs } from '../../switch-api'
+} from 'ilp-sdk'
+import { UplinkConfigs } from 'ilp-sdk'
 import BigNumber from 'bignumber.js'
 import { createHmac } from 'crypto'
 import debug from 'debug'
@@ -631,8 +631,7 @@ export default new Vuex.Store<State>({
         type: 'config-credential',
         config: {
           settlerType: SettlementEngineType.XmrdPaychan,
-          assetType: 'XMRD',
-          privateKey: ''
+          secret: ''
         }
       })
     },

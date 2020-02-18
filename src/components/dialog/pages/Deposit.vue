@@ -161,8 +161,8 @@ export default {
       if (new BigNumber(this.depositAmount).isZero()) {
         return
       }
-
       const uplinkId = this.uplink.id
+      log('Deposit clicked!', uplinkId)
       this.uplink.activeDeposit = this.$store.state.sdk
         .deposit({
           uplink: this.uplink.getInternal(),

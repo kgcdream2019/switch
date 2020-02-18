@@ -42,7 +42,7 @@
 </template>
 
 <script>
-import { LedgerEnv } from '../../../switch-api'
+import { LedgerEnv } from 'ilp-sdk'
 
 export default {
   computed: {

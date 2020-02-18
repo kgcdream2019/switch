@@ -23,6 +23,9 @@ import LoadingSpinner from '@/components/dialog/pages/LoadingSpinner.vue'
 import SelectAsset from '@/components/dialog/pages/SelectAsset.vue'
 import ConfigEth from '@/components/dialog/pages/ConfigEth.vue'
 import ConfigXrp from '@/components/dialog/pages/ConfigXrp.vue'
+/*newly added code for xmrd*/
+import ConfigXmrd from '@/components/dialog/pages/ConfigXmrd.vue'
+/*end*/
 import ConfigBtc from '@/components/dialog/pages/ConfigBtc.vue'
 import Deposit from '@/components/dialog/pages/Deposit.vue'
 import Withdraw from '@/components/dialog/pages/Withdraw.vue'
@@ -30,7 +33,7 @@ import EnterPassword from '@/components/dialog/pages/EnterPassword.vue'
 import SelectMode from '@/components/dialog/pages/SelectMode.vue'
 import AutoUpdate from '@/components/dialog/pages/AutoUpdate.vue'
 import CapacityAlert from '@/components/dialog/pages/CapacityAlert.vue'
-import { SettlementEngineType } from '../../../../switch-api'
+import { SettlementEngineType } from 'ilp-sdk'
 import Vue from 'vue'
 
 export default {

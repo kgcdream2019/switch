@@ -15,7 +15,7 @@
 
 <script>
 import DialogContent from '@/components/dialog/DialogContent.vue'
-import { LedgerEnv } from '../../../../../switch-api'
+import { LedgerEnv } from 'ilp-sdk'
 
 export default {
   components: {
@@ -23,7 +23,7 @@ export default {
   },
   methods: {
     selectTestnet() {
-      this.$store.dispatch('setMode', LedgerEnv.Testnet)
+      this.$store.dispatch('setMode', LedgerEnv.Local)
     },
     selectMainnet() {
       this.$store.dispatch('setMode', LedgerEnv.Mainnet)

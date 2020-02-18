@@ -71,7 +71,7 @@ import BigNumber from 'bignumber.js'
 export default Vue.extend({
   components: { UplinkCardButton },
   props: {
-    /** Uplink data from switch-api */
+    /** Uplink data from ilp-sdk */
     uplink: {
       type: Object as () => Uplink,
       required: true
